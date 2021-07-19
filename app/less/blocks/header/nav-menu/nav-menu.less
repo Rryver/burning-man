@@ -1,15 +1,33 @@
 .nav-menu {
-
+    display: inline-block;
 
     &__list {
-
+        margin-left: 67px;
     }
 
     &__item {
+        display: inline-block;
+        margin-right: 36px;
 
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &_active {
+            text-decoration: underline;
+        }
     }
 
-    &__link {
 
+    &__link {
+        font-size: 14px;
+        line-height: 1.5em;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        color: @color-white;
     }
 }
